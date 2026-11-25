@@ -1,0 +1,30 @@
+@import "tailwindcss";
+.header{
+  margin:20px auto;
+  color:#121212;
+  font-size:40px;
+  text-align:center;
+  font-weight: 500;
+}
+.pass {
+    @apply border-2 border-gray-300 rounded-md p-2;
+}
+
+.mail {
+    @apply border-2 border-gray-300 rounded-md p-2;
+}
+.form {
+  max-width: 300px;
+  margin: 40px auto;
+  border: 1px solid #121212;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.image{
+  display:block;
+  margin:0 auto;
+  max-width:100%;
+}
