@@ -9,6 +9,7 @@ import Clients from './pages/clients'
 import Dashboard from './pages/dashboard'
 import Teams from './pages/teams'
 import Settings from './pages/settings'
+import Register from './pages/register'
 
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
     <Route path="/dashboard" element={<Dashboard/>}/>
     <Route path="/teams" element={<Teams/>}/>
     <Route path="/settings" element={<Settings/>}/>
+    <Route path="/registers" element={<Register/>}/>
+
 
     </Routes>
     </BrowserRouter>

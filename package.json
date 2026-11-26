@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "react-router-dom": "^7.18.7"
+    "@hookform/resolvers": "^7.0.9",
+    "react-hook-form": "^7.92.0",
+    "react-router-dom": "^7.18.7",
+    "zod": "^4.6.7"
   }
 }
