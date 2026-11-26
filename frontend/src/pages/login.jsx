@@ -20,7 +20,7 @@ const[email,setEmail]=useState("");
   <h1 className='header'>LOGIN PAGE</h1>
   <img src={login} className='image'/>
   <form onSubmit= {formsubmit} className="form">
-   Email: <input type ="text" required  placeholder='Enter your name' className='mail'  value={email} onChange={(e) => setEmail(e.target.value)} /> <br />  
+   Email: <input type ="email" required  placeholder='Enter your name' className='mail'  value={email} onChange={(e) => setEmail(e.target.value)} /> <br />  
    Password: <input type ="password" required placeholder='Enter your password' className='pass' value={password} onChange={(e) => {setPassword(e.target.value)}}  /><br/>
    <button type="submit" className='bg-blue-400'>Submit </button>
    </form>

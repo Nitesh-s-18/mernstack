@@ -1,7 +1,7 @@
 @import "tailwindcss";
 .header{
   margin:20px auto;
-  color:#d60c0c;
+  color:#050101;
   font-size:40px;
   text-align:center;
   font-weight: 500;
@@ -14,7 +14,7 @@
     @apply border-2 border-gray-300 rounded-md p-2;
 }
 .form {
-  max-width: 300px;
+  max-width: 350px;
   margin: 40px auto;
   border: 1px solid #121212;
   border-radius: 8px;

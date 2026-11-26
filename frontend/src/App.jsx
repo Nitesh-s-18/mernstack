@@ -1,17 +1,30 @@
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Login from './pages/login'
-import Project from './pages/project'
 import Task from './pages/task'
+import Project from './pages/project'
+import Calender from './pages/calender'
+import Clients from './pages/clients'
+import Dashboard from './pages/dashboard'
+import Teams from './pages/teams'
+import Settings from './pages/settings'
+
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/project" element={<Project />} />
-        <Route path="/task" element={<Task />} />
-      </Routes>
+  <BrowserRouter>
+  <Routes>
+    <Route path="/" element={<Login/>}/>
+    <Route path="/project" element={<Project/>}/>
+    <Route path="/task" element={<Task/>}/>  
+    <Route path="/calender" element={<Calender/>}/>
+    <Route path="/clients" element={<Clients/>}/>
+    <Route path="/dashboard" element={<Dashboard/>}/>
+    <Route path="/teams" element={<Teams/>}/>
+    <Route path="/settings" element={<Settings/>}/>
+
+    </Routes>
     </BrowserRouter>
   )
 }
