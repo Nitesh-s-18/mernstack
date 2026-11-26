@@ -1,7 +1,7 @@
 @import "tailwindcss";
 .header{
   margin:20px auto;
-  color:#050101;
+  color:rgb(255, 0, 157);
   font-size:40px;
   text-align:center;
   font-weight: 500;
@@ -10,7 +10,7 @@
     @apply border-2 border-gray-300 rounded-md p-2;
 }
 
-.mail {
+.name {
     @apply border-2 border-gray-300 rounded-md p-2;
 }
 .form {

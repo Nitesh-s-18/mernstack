@@ -1,5 +1,19 @@
+import { useState } from "react";
+import { useLocation } from "react-router-dom";
+
 function Dashboard() {
-    return (  <div> Welcome to Dashboard</div>);
+   const location=useLocation();
+   const[userdata,setUserdata]=useState("");
+   function displaydata()
+   {
+    setUserdata(location.state);
+    console.log(userdata)
+   }
+    return (  
+    <div>
+        <button onClick={displaydata}>Submit</button>
+    </div>
+    );
 }
 
 export default Dashboard;

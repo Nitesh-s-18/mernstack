@@ -1,13 +1,27 @@
 import {useState} from 'react'
 import login from '../assets/login.jpg'
+import { useNavigate } from 'react-router-dom';
 function Login()
 {
-const[email,setEmail]=useState("");
-  const[password,setPassword]=useState("");
+  const navigate=useNavigate()
+const[formdata,setFormdata]=useState({username : " ",password : " ",});
+function handlechange(e)
+{ e.preventDefault()
+ setFormdata({
+  ...formdata,
+  [e.target.name]: e.target.value
+});
+
+}
+ 
   const formsubmit=(e)=>
   {
     e.preventDefault()
-    console.log(email,password)
+    console.log(formdata)
+    alert("Form Submitted Successfully!")
+    navigate("/dashboard")
+  
+    
 
   }
   return( 
@@ -20,8 +34,8 @@ const[email,setEmail]=useState("");
   <h1 className='header'>LOGIN PAGE</h1>
   <img src={login} className='image'/>
   <form onSubmit= {formsubmit} className="form">
-   Email: <input type ="email" required  placeholder='Enter your name' className='mail'  value={email} onChange={(e) => setEmail(e.target.value)} /> <br />  
-   Password: <input type ="password" required placeholder='Enter your password' className='pass' value={password} onChange={(e) => {setPassword(e.target.value)}}  /><br/>
+   UserName: <input type ="email" required  placeholder='Enter your name' className='name'  name='username'onChange={handlechange} /> <br />  
+   Password: <input type ="password" required placeholder='Enter your password' className='pass' name='password' onChange={handlechange}  /><br/>
    <button type="submit" className='bg-blue-400'>Submit </button>
    </form>
     </>
