@@ -15,17 +15,22 @@ function Register() {
     }
     return (  
         <>
+         <div className=" flex  justify-center items-center ">
+         <div className='mt-25 w max-w-sm  rounded-md border border-gray-400 bg-gray-100 px-3 shadow-md mt-4 pb-8 pt-4' >
         <form className="form" onSubmit={handleSubmit(onsubmit1)}>
-        Name: <input type="text" placeholder="Enter your name" className="name"{...register("name")}/>
+            <h1 className=' text-center font-bold text-2xl '>REGISTER PAGE</h1>
+        Name: <input type="text" placeholder="Enter your name" className='block w-full rounded-md border border-gray-300 px-3 py-2 text-center text-sm' {...register("name")}/>
         <p> {errors.name?.message}</p>
-        Email: <input type="email" placeholder="Enter your mail" className="name" {...register("email")}a/>
+        Email: <input type="email" placeholder="Enter your mail" className='block w-full rounded-md border border-gray-300 px-3 py-2 text-center text-sm'  {...register("email")}a/>
         <p> {errors.email?.message}</p>
-        Password: <input type="password" placeholder="Enter your password" className="pass"{...register("password")}/>
+        Password: <input type="password" placeholder="Enter your password" className='block w-full rounded-md border border-gray-300 px-3 py-2 text-center text-sm' {...register("password")}/>
         <p> {errors.password?.message}</p>
-        Age: <input type="number" placeholder="Enter your Age" className="name" {...register("age")}/>
+        Age: <input type="number" placeholder="Enter your Age" className='block w-full rounded-md border border-gray-300 px-3 py-2 text-center text-sm'  {...register("age")}/>
         <p> {errors.age?.message}</p>
-        <button type="submit" className="bg-amber-600">SUBMIT</button>
+        <button type="submit" className='bg-indigo-500 mt-5 mx-auto block rounded-sm px-3 py-1 font-semibold text-white hover:bg-indigo-500'>SUBMIT</button>
         </form>
+        </div>
+        </div>
         </>
     );
 }
