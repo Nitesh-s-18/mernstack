@@ -12,7 +12,7 @@ function Dashboard() {
     useEffect(()=>
     {       setUserdata(location.state)  
             console.log(userdata)
-    },[])
+    },)
 
     return ( 
         <>
